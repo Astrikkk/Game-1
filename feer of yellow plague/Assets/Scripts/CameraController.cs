@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public Transform target;
+    private GameObject target;
     public float zoomSpeed = 1f;
     public float minZoom = 2f;
     public float maxZoom = 15f;
@@ -12,13 +12,15 @@ public class CameraController : MonoBehaviour
     private Camera cam;
     void Start()
     {
-        offset = transform.position - target.position;
+        target = GameObject.FindWithTag("Player");
+        offset = transform.position - target.transform.position;
         cam = GetComponent<Camera>();
     }
 
     void FixedUpdate()
     {
-        Vector3 targetPosition = target.position + offset;
+        target = GameObject.FindWithTag("Player");
+        Vector3 targetPosition = target.transform.position + offset;
         transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * 3);
 
         if (Input.GetKey(KeyCode.KeypadPlus))
