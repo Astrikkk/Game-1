@@ -12,7 +12,11 @@ public class Car : Vechicle
             moveInput = Input.GetAxis("Vertical");
             rotateInput = Input.GetAxis("Horizontal");
         }
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && IsInCar==true)
+        {
+            Sit();
+        }
+        if (Input.GetKeyDown(KeyCode.F) && IsColWithPlayer==true)
         {
             Sit();
         }
@@ -27,9 +31,13 @@ public class Car : Vechicle
                 transform.Rotate(Vector3.forward, -rotateInput * rotateSpeed * Time.fixedDeltaTime);
         }
     }
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (CompareTag("Player"))IsColWithPlayer = true;
-        else IsColWithPlayer = false;
+        if (collision.gameObject.CompareTag("Player"))IsColWithPlayer = true;
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))IsColWithPlayer = false;
+    }
+
 }
