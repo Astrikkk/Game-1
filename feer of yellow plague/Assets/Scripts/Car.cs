@@ -12,11 +12,11 @@ public class Car : Vechicle
             moveInput = Input.GetAxis("Vertical");
             rotateInput = Input.GetAxis("Horizontal");
         }
-        if (Input.GetKeyDown(KeyCode.F) && IsInCar==true)
+        if (Input.GetKeyDown(KeyCode.F) && IsInCar == true)
         {
             Sit();
         }
-        if (Input.GetKeyDown(KeyCode.F) && IsColWithPlayer==true)
+        if (Input.GetKeyDown(KeyCode.F) && IsColWithPlayer == true)
         {
             Sit();
         }
@@ -33,11 +33,32 @@ public class Car : Vechicle
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))IsColWithPlayer = true;
+        if (collision.gameObject.CompareTag("Player")) IsColWithPlayer = true;
+
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))IsColWithPlayer = false;
+        if (collision.gameObject.CompareTag("Player")) IsColWithPlayer = false;
     }
-
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Bullet"))
+        {
+            HP -= other.gameObject.GetComponent<Bullet>().damage;
+            if (HP <= 0) Kill();
+        }
+    }
+    private void Kill()
+    {
+        broken.SetActive(true);
+        broken.transform.position = obj.transform.position;
+        broken.transform.rotation = obj.transform.rotation;
+        if (IsInCar)
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            player.GetComponent<Player>().TakeDamage(99);
+            Sit();
+        }
+        obj.SetActive(false);
+    }
 }

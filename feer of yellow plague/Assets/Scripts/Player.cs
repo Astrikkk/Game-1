@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     public GameObject HoldPoint;
     private GameObject gun;
 
+    public int HP = 100;
+
     void Start()
     {
         mainCamera = Camera.main;
@@ -16,6 +18,7 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Gun"))
         {
+            if (gun != null) return;
             gun = other.gameObject;
             gun.transform.SetParent(transform);
             gun.transform.position = HoldPoint.transform.position;
@@ -43,7 +46,7 @@ public class Player : MonoBehaviour
         float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90.0f;
         transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
 
-        if (Input.GetMouseButtonDown(0) && gun != null)
+        if (Input.GetMouseButton(0) && gun != null)
         {
             Shoot();
         }
@@ -62,5 +65,10 @@ public class Player : MonoBehaviour
             gun.GetComponent<Pistol>().IsInArms = false;
             gun = null;
         }
+    }
+    public void TakeDamage(int damage)
+    {
+        HP -= damage;
+        if (HP <= 0) Destroy(gameObject);
     }
 }

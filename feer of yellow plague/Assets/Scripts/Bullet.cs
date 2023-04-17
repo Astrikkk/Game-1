@@ -7,14 +7,12 @@ public class Bullet : MonoBehaviour
 
     public float speed = 10f;
     public int damage = 10;
-    private bool isMoving;
     private float collisionDelay = 0.03f;
     private bool canCollide = false;
 
 
     void Start()
     {
-        isMoving = true;
         Invoke(nameof(EnableCollision), collisionDelay);
     }
     // При стиканні з іншим об'єктом, проводимо дії

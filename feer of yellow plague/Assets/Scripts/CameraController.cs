@@ -7,7 +7,7 @@ public class CameraController : MonoBehaviour
     private GameObject target;
     public float zoomSpeed = 1f;
     public float minZoom = 2f;
-    public float maxZoom = 15f;
+    public float maxZoom = 18f;
     private Vector3 offset;
     private Camera cam;
     void Start()
