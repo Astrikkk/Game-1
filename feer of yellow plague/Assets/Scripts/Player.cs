@@ -26,6 +26,15 @@ public class Player : MonoBehaviour
             gun.GetComponent<Rigidbody2D>().isKinematic = true;
             gun.GetComponent<Pistol>().IsInArms = true;
         }
+
+        if (other.gameObject.CompareTag("Ammo"))
+        {
+            if (gun == null) return;
+            gun.GetComponent<Pistol>().allAmmo += 20;
+            GameObject ammo;
+            ammo = other.gameObject;
+            Destroy(ammo);
+        }
     }
     void Shoot()
     {
