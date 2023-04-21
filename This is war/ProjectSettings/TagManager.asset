@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Gun
+  - Bullet
+  - Ammo
+  - Item
+  - Inventory
+  - EnemyBullet
+  - Enemy
+  - GranateHit
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Ground
+    uniqueID: 736561441
+    locked: 0
+  - name: Embient
+    uniqueID: 4099732285
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Particles
+    uniqueID: 2743520655
+    locked: 0
+  - name: UpObjects
+    uniqueID: 1227391047
+    locked: 0
+  - name: Sky
+    uniqueID: 693415441
+    locked: 0
+  - name: UI
+    uniqueID: 1057143897
+    locked: 0
