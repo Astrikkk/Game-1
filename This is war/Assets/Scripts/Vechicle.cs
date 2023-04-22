@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Vechicle : MonoBehaviour
+public class Vechicle : Health
 {
     public float moveSpeed = 10f;
     public float rotateSpeed = 100f;
     protected float moveInput;
     protected float rotateInput;
-    public int HP;
     public GameObject broken;
     public GameObject obj;
     public Transform Exit;
@@ -37,5 +36,22 @@ public class Vechicle : MonoBehaviour
             PlayerPoint.SetActive(true);
             return;
         }
+    }
+    public override void TakeDamage(int damage)
+    {
+        HP -= damage;
+        if (HP <= 0) Kill();
+    }
+    protected virtual void Kill()
+    {
+        broken.SetActive(true);
+        broken.transform.position = obj.transform.position;
+        broken.transform.rotation = obj.transform.rotation;
+        if (IsInCar)
+        {
+            player.GetComponent<Player>().TakeDamage(99);
+            Sit();
+        }
+        obj.SetActive(false);
     }
 }

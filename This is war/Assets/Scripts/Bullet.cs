@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
 
     public float speed = 10f;
     public int damage = 10;
-    private float collisionDelay = 0.03f;
+    private float collisionDelay = 0.01f;
     private bool canCollide = false;
     public string nameTag;
 
@@ -59,6 +59,19 @@ public class Bullet : MonoBehaviour
             health.TakeDamage(damage);
         }
         Destroy(gameObject);
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Wall"))
+        {
+            Health health = other.gameObject.GetComponent<Health>();
+
+            if (health != null)
+            {
+                health.TakeDamage(damage);
+            }
+            Destroy(gameObject);
+        }
     }
     void Update()
     {

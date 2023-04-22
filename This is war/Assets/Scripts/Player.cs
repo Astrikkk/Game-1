@@ -10,6 +10,7 @@ public class Player : Health
     private GameObject gun;
     public GameObject GranatePrefab;
     public int GranateCount;
+    public bool CanMove = true;
 
 
 
@@ -57,24 +58,27 @@ public class Player : Health
 
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        Vector2 direction = new Vector2(horizontal, vertical).normalized;
-        transform.position += new Vector3(direction.x, direction.y, 0.0f) * moveSpeed * Time.deltaTime;
+        if (CanMove)
+        {
+            Vector2 direction = new Vector2(horizontal, vertical).normalized;
+            transform.position += new Vector3(direction.x, direction.y, 0.0f) * moveSpeed * Time.deltaTime;
 
-        Vector3 lookDirection = mousePosition - transform.position;
-        float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90.0f;
-        transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
+            Vector3 lookDirection = mousePosition - transform.position;
+            float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90.0f;
+            transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
 
-        if (Input.GetMouseButton(0) && gun != null)
-        {
-            Shoot();
-        }
-        else if (Input.GetKeyDown(KeyCode.Q) && gun != null)
-        {
-            DropGun();
-        }
-        else if (Input.GetKeyDown(KeyCode.G))
-        {
-            GranateThrow();
+            if (Input.GetMouseButton(0) && gun != null)
+            {
+                Shoot();
+            }
+            else if (Input.GetKeyDown(KeyCode.Q) && gun != null)
+            {
+                DropGun();
+            }
+            else if (Input.GetKeyDown(KeyCode.G))
+            {
+                GranateThrow();
+            }
         }
     }
     void DropGun()

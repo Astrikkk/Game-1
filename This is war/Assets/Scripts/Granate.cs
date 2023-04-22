@@ -7,11 +7,11 @@ public class Granate : MonoBehaviour
     public GameObject particles;
     public GameObject hit;
     public int ExplosionTime;
+   
     void Start()
     {
         StartCoroutine("TS");
     }
-
     private IEnumerator TS()
     {
         yield return new WaitForSeconds(ExplosionTime);

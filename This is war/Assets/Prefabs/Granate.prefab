@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5814114331062313059}
   m_Layer: 0
   m_Name: Granate
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,9 +161,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8954255510024075554}
   - component: {fileID: 4480857221419308710}
+  - component: {fileID: 4405969160145271862}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: GranateHit
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -199,6 +200,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 5.12
+--- !u!114 &4405969160145271862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3398194487679437100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6972cf071d1fbd14397d2a2a00cfc9fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100
 --- !u!1001 &228168625423532641
 PrefabInstance:
   m_ObjectHideFlags: 0

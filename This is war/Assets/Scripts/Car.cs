@@ -39,24 +39,5 @@ public class Car : Vechicle
     {
         if (collision.gameObject.CompareTag("Player")) IsColWithPlayer = false;
     }
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Bullet")|| other.gameObject.CompareTag("EnemyBullet"))
-        {
-            HP -= other.gameObject.GetComponent<Bullet>().damage;
-            if (HP <= 0) Kill();
-        }
-    }
-    private void Kill()
-    {
-        broken.SetActive(true);
-        broken.transform.position = obj.transform.position;
-        broken.transform.rotation = obj.transform.rotation;
-        if (IsInCar)
-        {
-            player.GetComponent<Player>().TakeDamage(99);
-            Sit();
-        }
-        obj.SetActive(false);
-    }
+    
 }
