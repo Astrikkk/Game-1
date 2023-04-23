@@ -100,13 +100,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a2a3d885716944bb4623118926b20b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HP: 150
   distanceToReact: 15
   patrolPoints:
   - {fileID: 6860332754733903941}
   - {fileID: 8672089174352842360}
   - {fileID: 174220981761022094}
   - {fileID: 6897986836664733542}
-  HP: 150
   moveSpeed: 3
   IsPatroling: 0
   rotateSpeed: 100
@@ -119,6 +119,9 @@ MonoBehaviour:
   firePoint: {fileID: 7623659432951205497}
   maxAmmo: 10
   reloadTime: 2
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!61 &297337844215217030
 BoxCollider2D:
   m_ObjectHideFlags: 0
