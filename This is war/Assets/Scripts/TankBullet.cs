@@ -6,10 +6,18 @@ public class TankBullet : MonoBehaviour
 {
     public GameObject particles;
     public GameObject hit;
+    public bool FirstCol = true;
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-            StartCoroutine("TS");    }
+        if (FirstCol == true)
+        {
+            FirstCol = false;
+            return;
+
+        }
+        StartCoroutine("TS");
+    }
     private IEnumerator TS()
     {
         particles.SetActive(true);

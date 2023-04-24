@@ -135,7 +135,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &4665704411189196156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particles: {fileID: 5563485070976057109}
   hit: {fileID: 3398194487679437100}
+  FirstCol: 1
 --- !u!1 &3398194487679437100
 GameObject:
   m_ObjectHideFlags: 0
