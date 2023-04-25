@@ -6,7 +6,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
 
-    public float speed = 10f;
+    public float speed = 30f;
     public int damage = 10;
     private float collisionDelay = 0.01f;
     private bool canCollide = false;
@@ -35,6 +35,7 @@ public class Bullet : MonoBehaviour
         {
             Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("Default"), true);
         }
+        transform.Translate(Vector3.right * speed * Time.deltaTime);
     }
     void EnableCollision()
     {
@@ -72,10 +73,6 @@ public class Bullet : MonoBehaviour
             }
             Destroy(gameObject);
         }
-    }
-    void Update()
-    {
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
     }
 }
 

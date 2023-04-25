@@ -7,7 +7,12 @@ public class TankBullet : MonoBehaviour
     public GameObject particles;
     public GameObject hit;
     public bool FirstCol = true;
+    public int speed = 30;
 
+    private void FixedUpdate()
+    {
+        transform.Translate(Vector3.up * speed * Time.deltaTime);
+    }
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (FirstCol == true)

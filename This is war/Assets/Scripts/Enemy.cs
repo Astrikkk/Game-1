@@ -53,7 +53,7 @@ public class Enemy : Health
                     Shoot();
                     Vector3 lookDirection = player.transform.position - transform.position;
                     float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90.0f;
-                    transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
+                    transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
                 }
                 else
                 {
@@ -148,10 +148,10 @@ public class Enemy : Health
 
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
 
-            bullet.transform.Rotate(0, 0, angle);
+            bullet.transform.Rotate(0, 0, angle + 90);
 
             Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
-            bulletRb.AddForce(firePoint.right * bulletSpeed, ForceMode2D.Impulse);
+            bulletRb.AddForce(firePoint.up * bulletSpeed, ForceMode2D.Impulse);
         }
 
         currentAmmo--;

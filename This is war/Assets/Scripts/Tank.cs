@@ -60,9 +60,6 @@ public class Tank : Vechicle
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
 
             bullet.transform.Rotate(0, 0, angle);
-
-            Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
-            bulletRb.AddForce(firePoint.up * bulletSpeed, ForceMode2D.Impulse);
         }
 
         currentAmmo--;

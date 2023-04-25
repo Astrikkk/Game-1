@@ -14,6 +14,7 @@ public class Pistol : MonoBehaviour
     public float fireRate = 0.1f;
     public int bulletsPerShot = 1;
     public float bulletSpread = 0.1f;
+    public Sprite[] skin;
 
     private float fireTimer = 0f;
 
@@ -47,10 +48,7 @@ public class Pistol : MonoBehaviour
 
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
 
-            bullet.transform.Rotate(0, 0, angle);
-
-            Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
-            bulletRb.AddForce(firePoint.right * bulletSpeed, ForceMode2D.Impulse);
+            bullet.transform.Rotate(0, 0, angle + 90);
         }
 
         currentAmmo--;

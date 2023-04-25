@@ -29,6 +29,8 @@ public class Player : Health
             gun.transform.rotation = HoldPoint.transform.rotation;
             gun.GetComponent<Rigidbody2D>().isKinematic = true;
             gun.GetComponent<Pistol>().IsInArms = true;
+            gun.GetComponent<SpriteRenderer>().sprite = gun.GetComponent<Pistol>().skin[1];
+
         }
 
         if (other.gameObject.CompareTag("Ammo"))
@@ -48,7 +50,7 @@ public class Player : Health
     {
         GameObject granate = Instantiate(GranatePrefab, ThrowPoint.transform.position, transform.rotation);
         Rigidbody2D bulletRb = granate.GetComponent<Rigidbody2D>();
-        bulletRb.AddForce(transform.right * 10, ForceMode2D.Impulse);
+        bulletRb.AddForce(transform.up * 10, ForceMode2D.Impulse);
     }
 
     void Update()
@@ -65,7 +67,7 @@ public class Player : Health
 
             Vector3 lookDirection = mousePosition - transform.position;
             float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90.0f;
-            transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
+            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
             if (Input.GetMouseButton(0) && gun != null)
             {
@@ -89,6 +91,7 @@ public class Player : Health
             gun.GetComponent<Rigidbody2D>().isKinematic = false;
             gun.GetComponent<BoxCollider2D>().enabled = true;
             gun.GetComponent<Pistol>().IsInArms = false;
+            gun.GetComponent<SpriteRenderer>().sprite = gun.GetComponent<Pistol>().skin[0];
             gun = null;
         }
     }
