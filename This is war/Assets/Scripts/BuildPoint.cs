@@ -4,6 +4,7 @@ using UnityEngine;
 public class BuildPoint : MonoBehaviour
 {
     public GameObject BuildMenu;
+    public GameObject showBuild;
     public bool CanBuild = true;
     public List<GameObject> buildedObjects;
 
@@ -30,6 +31,7 @@ public class BuildPoint : MonoBehaviour
     public void OpenMenu()
     {
         BuildMenu.SetActive(true);
+        showBuild.SetActive(true);
 
         Player player = null;
         if (GameObject.FindGameObjectWithTag("Player").TryGetComponent(out player))
@@ -41,6 +43,7 @@ public class BuildPoint : MonoBehaviour
     public void CloseMenu()
     {
         BuildMenu.SetActive(false);
+        showBuild.SetActive(false);
 
         Player player = null;
         if (GameObject.FindGameObjectWithTag("Player").TryGetComponent(out player))
