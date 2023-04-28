@@ -5,7 +5,6 @@ using UnityEngine;
 public class TankBullet : MonoBehaviour
 {
     public GameObject particles;
-    public GameObject hit;
     public bool FirstCol = true;
     public int speed = 30;
 
@@ -26,7 +25,6 @@ public class TankBullet : MonoBehaviour
     private IEnumerator TS()
     {
         particles.SetActive(true);
-        hit.SetActive(true);
         yield return new WaitForSeconds(0.2f);
         Destroy(gameObject);
     }

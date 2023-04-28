@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e81862258c5b6f429cce88129f16f87
-      internalID: -950530944
+      spriteID: 9c4816d2a55ebad4c8e0495ae5115680
+      internalID: 964569021
       vertices: []
       indices: 
       edges: []
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6576211f132ba3f4e9533e1e886c7978
-      internalID: -311145839
+      spriteID: f9223ee4bb0fbc54abddeaa8b858d9d0
+      internalID: 2065718913
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afbb7f9982f9eb04d96242ce3b6f3535
-      internalID: -1268567760
+      spriteID: e84fbe5b9ca91574d875dc256dba5c57
+      internalID: 1544052784
       vertices: []
       indices: 
       edges: []
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5acac35c815008c449b99040b9652673
-      internalID: 231407590
+      spriteID: 12819a3c99723384380722568cd59666
+      internalID: -1838648269
       vertices: []
       indices: 
       edges: []
@@ -215,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7eb82586b7d3794d8023dca80a9f390
-      internalID: -349343123
+      spriteID: c6c90f8e538fcf344b31eb6bbd12bc6b
+      internalID: 1360412374
       vertices: []
       indices: 
       edges: []
@@ -236,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 932dce669bfeff541812fbe7cfc81806
-      internalID: 1439429557
+      spriteID: 51217099725587147b3f3ddb22b5a879
+      internalID: -182222505
       vertices: []
       indices: 
       edges: []
@@ -246,10 +246,10 @@ TextureImporter:
       name: This is war 1_6
       rect:
         serializedVersion: 2
-        x: 372
-        y: 1051
-        width: 11
-        height: 12
+        x: 408
+        y: 778
+        width: 161
+        height: 296
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,14 +257,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60207032854cfe149a7f0177ca3d2bb3
-      internalID: 787312231
+      spriteID: d7cd5806429bbd54c8f0529c7b926a79
+      internalID: 524458214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: This is war 1_7
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 812
+        width: 142
+        height: 261
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27458945}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b19668c1565b6458d9b2d8cbcf332f
+      internalID: 255713374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_8
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 775
+        width: 161
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b93773920ee10714f8eaa8d7d39272e9
+      internalID: -314809423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_9
       rect:
         serializedVersion: 2
         x: 900
@@ -278,14 +320,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9463678f4b343e542bd8da6e25cc983c
-      internalID: -391573151
+      spriteID: e5626c0ea2d291f409f702295107e203
+      internalID: 880156521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_8
+      name: This is war 1_10
       rect:
         serializedVersion: 2
         x: 994
@@ -299,35 +341,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e8fda522d700ef44aa521e20ca30a32
-      internalID: -2142070276
+      spriteID: 143f749f7dda1e34fa71804165c5f68b
+      internalID: 395180303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_9
-      rect:
-        serializedVersion: 2
-        x: 368
-        y: 1032
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01235b556f46b9749ad9859767a5ffb2
-      internalID: 2006574445
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: This is war 1_10
+      name: This is war 1_11
       rect:
         serializedVersion: 2
         x: 6
@@ -341,14 +362,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8924604125f0d5b47a9758f96fca91e8
-      internalID: 2054197495
+      spriteID: f573cd7c4c88c0949abd7bd1d693eca1
+      internalID: -1085081097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_11
+      name: This is war 1_12
       rect:
         serializedVersion: 2
         x: 65
@@ -362,14 +383,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53c6d13a76f9c2941b9c68623b270b9b
-      internalID: 1231655696
+      spriteID: fd7eca7a8038f1948a446e8a7d0c8524
+      internalID: -911865956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_12
+      name: This is war 1_13
       rect:
         serializedVersion: 2
         x: 125
@@ -383,14 +404,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46fd92d57651ad347ae78cc3f94a7c93
-      internalID: 1463227311
+      spriteID: 52a7c971191c6864bb534b10b52df4e0
+      internalID: -740242220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_13
+      name: This is war 1_14
       rect:
         serializedVersion: 2
         x: 194
@@ -404,14 +425,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7c3416a8289b634fb498c041fbf62e5
-      internalID: 1693091780
+      spriteID: d3a345ba471f4eb4dbd5c30399a025b5
+      internalID: 26220349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_14
+      name: This is war 1_15
       rect:
         serializedVersion: 2
         x: 253
@@ -425,14 +446,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d2ee55c4d739df44a5f9e8a3bb7ed49
-      internalID: -1427504041
+      spriteID: 1b6a3243e9e4ccd4caf3e88e2e2f4651
+      internalID: 1288285389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_15
+      name: This is war 1_16
       rect:
         serializedVersion: 2
         x: 313
@@ -446,56 +467,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b087e08e5d05cd4459351a50a2f9012e
-      internalID: -1416316303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: This is war 1_16
-      rect:
-        serializedVersion: 2
-        x: 408
-        y: 712
-        width: 161
-        height: 296
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92af8ca1302eec046acd189dd2053227
-      internalID: 986852853
+      spriteID: 0fd849e6748150544b2f4fb5c8f8f802
+      internalID: 60784447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: This is war 1_17
-      rect:
-        serializedVersion: 2
-        x: 584
-        y: 746
-        width: 142
-        height: 261
-      alignment: 9
-      pivot: {x: 0.5089034, y: 0.26022702}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ffe3c3954ebc17d4c9fabbe00a31e7bf
-      internalID: -1785880213
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: This is war 1_18
       rect:
         serializedVersion: 2
         x: 6
@@ -509,14 +488,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d08e81b53c25cc44b746032fc5f8c92
-      internalID: -1308015024
+      spriteID: b7695fac2dc0d274a8a165f5202019dd
+      internalID: 1502318629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_19
+      name: This is war 1_18
       rect:
         serializedVersion: 2
         x: 65
@@ -530,14 +509,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1016b576c38944547b38bdca354038d6
-      internalID: -1694649327
+      spriteID: 0d680a9a23265b5409e83939d9f3c83f
+      internalID: -734041793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_20
+      name: This is war 1_19
       rect:
         serializedVersion: 2
         x: 125
@@ -551,14 +530,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 813ad2f0e83211a48b475db443d2860b
-      internalID: 1236437498
+      spriteID: a1027d471d821144ab0e553eeca6dde0
+      internalID: 1570154679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_21
+      name: This is war 1_20
       rect:
         serializedVersion: 2
         x: 194
@@ -572,14 +551,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc7ffb5625b48da4d988ebd6350b57e4
-      internalID: 1556291667
+      spriteID: e7adb73edfb78fd4dbcf8c6cb599c5a6
+      internalID: -1042888415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_22
+      name: This is war 1_21
       rect:
         serializedVersion: 2
         x: 253
@@ -593,14 +572,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63334fd8ad935904790a98cf5a3ee68c
-      internalID: 1145632386
+      spriteID: 5cbbf94fb91abf54fa33f4b54dc640df
+      internalID: 336734861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_23
+      name: This is war 1_22
       rect:
         serializedVersion: 2
         x: 313
@@ -614,14 +593,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 889d5ba6d5a3e8e4f8db2b539abd800e
-      internalID: -220293233
+      spriteID: f3b09ec341b4d604599ff089df056a74
+      internalID: -362245525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_24
+      name: This is war 1_23
       rect:
         serializedVersion: 2
         x: 6
@@ -635,14 +614,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 156b9fdc494e33249a3296377b311f5c
-      internalID: 2064082459
+      spriteID: dd278cfe06abe874aa29705828925f4a
+      internalID: 1222447457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_25
+      name: This is war 1_24
       rect:
         serializedVersion: 2
         x: 65
@@ -656,14 +635,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47ea1cb217afd3b49887d0c268fae043
-      internalID: 2087179838
+      spriteID: 02f8ef6aece9b8c4484243eb20367aa3
+      internalID: -414957336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_26
+      name: This is war 1_25
       rect:
         serializedVersion: 2
         x: 125
@@ -677,14 +656,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44f733ab08c75664fb66b6e40ea2704a
-      internalID: -216025729
+      spriteID: 39f94e0655b39f34b9ce4ba2ba63a140
+      internalID: -2041850106
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_27
+      name: This is war 1_26
       rect:
         serializedVersion: 2
         x: 194
@@ -698,14 +677,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c4759830164fbd4693afa9d5b948072
-      internalID: -432120258
+      spriteID: 3e1829790bdcc224ab7c9933f972c007
+      internalID: 2123652258
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_28
+      name: This is war 1_27
       rect:
         serializedVersion: 2
         x: 253
@@ -719,14 +698,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 433bbaa919e0b684db7ff0f189ca26d0
-      internalID: -2013182588
+      spriteID: 5d977c675742c0e4fbcaa75a6fa05394
+      internalID: 1167936793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_29
+      name: This is war 1_28
       rect:
         serializedVersion: 2
         x: 313
@@ -740,8 +719,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bdb211c50b693045bfb336fb4866f72
-      internalID: -334963447
+      spriteID: dee80d2d136d0e543b7a9b03866f2d24
+      internalID: 1505449223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_29
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 716
+        width: 80
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9b7e9ebcb5f7449aee60d52cc3fbc4
+      internalID: -1892936833
       vertices: []
       indices: 
       edges: []
@@ -750,8 +750,533 @@ TextureImporter:
       name: This is war 1_30
       rect:
         serializedVersion: 2
-        x: 368
-        y: 787
+        x: 994
+        y: 716
+        width: 80
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb3ef82c20281f45ae49756ee2c1009
+      internalID: 1597790569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_31
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 570
+        width: 96
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7d8f04c377a0e47b32fa42503448be
+      internalID: -1917612164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_32
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 683
+        width: 51
+        height: 111
+      alignment: 9
+      pivot: {x: 0.5155888, y: 0.25647742}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c57f25ba2f1de40b3a344eeeb88f7a
+      internalID: -1450747173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_33
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 571
+        width: 96
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630381f65a2d1304789e567ca641f872
+      internalID: -1660961006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_34
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 734
+        width: 8
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77768411ea703844b25c86110ac90d2
+      internalID: 1087715366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_35
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 633
+        width: 81
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef946879628045458358a00f1ff5b47
+      internalID: -478981223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_36
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 664
+        width: 112
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbcc5beef6d2fad43b1289036055248e
+      internalID: -2145418495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_37
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 645
+        width: 42
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c7e33b5356ddb4fb5d2594b432c4b5
+      internalID: -1700014101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_38
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 664
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c759cdd9f3f6fb145ac62f7008005ba1
+      internalID: -1306911798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_39
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 543
+        width: 80
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aaa629208f3a914a85ead061e083559
+      internalID: -1206565316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_40
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 544
+        width: 80
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f80d44c28205547877e2955da84b76
+      internalID: -374452371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_41
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 632
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c436667beb879d4999980c0632eabfd
+      internalID: 776165742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_42
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 588
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d5ac92627cfa84f9029faaf36e9a62
+      internalID: -329675093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_43
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 584
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e774e100a3dd4f4e9497f4e564f1fa2
+      internalID: -250974057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_44
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 588
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c98f5955a1c4d458af1cccc6c9306b
+      internalID: 164755301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_45
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 537
+        width: 84
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33333ded562a3054abffb5ed011a1bad
+      internalID: 203320736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_46
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 537
+        width: 79
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545a0f3385466ec44895a598991dc4b6
+      internalID: -981121388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_47
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 541
+        width: 99
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c6fe9ad9ce6fb4ab3964cff3c92121
+      internalID: -653388917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_48
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 511
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d805459d208b7a43b6785e6223bad51
+      internalID: 2082794821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_49
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 520
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d60d618e098b343be12c0eeb974313
+      internalID: 1771579805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_50
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 502
+        width: 102
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2feeaac44e5dc7e4a988a8b9db74d9d1
+      internalID: -1045505695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_51
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 507
+        width: 105
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65914f6b2570e0d468ed3d9ac0081528
+      internalID: 1186892126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_52
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 492
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7472b99c612db5341845ae8477316e4a
+      internalID: 1645513983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_53
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 415
+        width: 6
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e51fbfcc388884ba0e655f367e5128
+      internalID: -1689403082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_54
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 489
+        width: 38
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d934c8a03835f4885a492f037084e0
+      internalID: -438810287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_55
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 433
         width: 6
         height: 51
       alignment: 0
@@ -761,18 +1286,165 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e3da2d28ab10054fbe76cc74aa68d45
-      internalID: -64246477
+      spriteID: 98024a511317c854daedf40f04a68047
+      internalID: -1410015547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_31
+      name: This is war 1_56
       rect:
         serializedVersion: 2
-        x: 900
-        y: 584
+        x: 48
+        y: 431
+        width: 4
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c40f3cb2367c4446a2439e098ad7afc
+      internalID: -2101260002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_57
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 428
+        width: 6
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8710cc19fe2d8854eb53ab7878183a26
+      internalID: -688949194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_58
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 423
+        width: 4
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 131639b1a4266f34dbe7f575cdccfe54
+      internalID: 1728422178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_59
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 415
+        width: 6
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4a7bdd3a579b445b638bdcededcb94
+      internalID: -587273421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_60
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 437
+        width: 11
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c29dc69070d554daf12ba72c82d6fa
+      internalID: 713854776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_64
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 25
+        width: 136
+        height: 340
+      alignment: 9
+      pivot: {x: 0.50262946, y: 0.28354794}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ffb15bf00768e04b8fe0d62239d5d6d
+      internalID: 53696037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_67
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 328
+        width: 96
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d484536ef51cb4d8384fb8792036f6
+      internalID: -1503219567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_68
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 9
         width: 161
         height: 296
       alignment: 0
@@ -782,20 +1454,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31e74cecb9ca71b4c876f4f6744e954b
-      internalID: -68215561
+      spriteID: 2f2c6b03b0e02ea46a0460b3a58a25bd
+      internalID: -137357131
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_32
+      name: This is war 1_69
       rect:
         serializedVersion: 2
-        x: 316
-        y: 815
-        width: 35
-        height: 13
+        x: 179
+        y: 26
+        width: 142
+        height: 257
+      alignment: 9
+      pivot: {x: 0.5, y: 0.26798758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c24f68ef87a710428187e291eecab43
+      internalID: -932208264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_70
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 11
+        width: 161
+        height: 296
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -803,20 +1496,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea0ec449692638546b9087254f98611a
-      internalID: -592418422
+      spriteID: 719a32a916b279b4fa519f37e1593894
+      internalID: 1110820247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_33
+      name: This is war 1_71
       rect:
         serializedVersion: 2
-        x: 318
-        y: 800
-        width: 19
-        height: 9
+        x: 506
+        y: 24
+        width: 161
+        height: 285
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -824,20 +1517,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 906d2c0825653d944b3612dd6ba6bbb3
-      internalID: -650053579
+      spriteID: ea629057cc1261346ac183534a2d9a75
+      internalID: -990004544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: This is war 1_34
+      name: This is war 1_72
       rect:
         serializedVersion: 2
-        x: 382
-        y: 790
-        width: 6
-        height: 17
+        x: 884
+        y: 21
+        width: 161
+        height: 285
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -845,8 +1538,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf12bb8b1a83689438ae62ff2f564cce
-      internalID: -9574928
+      spriteID: ca3b66605a6ce0c418934fac9101e0a2
+      internalID: -529632915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_61
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 360
+        width: 96
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06d1ed1f1726f347b0c0d99043e8ac9
+      internalID: 1321452213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_62
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 392
+        width: 96
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1121abb4e364eb4f8a97a15aacf8a4b
+      internalID: 684365396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This is war 1_63
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 438
+        width: 3
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e4859a2b7dd9e43ab76b7d4404b9cd
+      internalID: 1625841447
       vertices: []
       indices: 
       edges: []
@@ -862,41 +1618,79 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      This is war 1_0: -950530944
-      This is war 1_1: -311145839
-      This is war 1_10: 2054197495
-      This is war 1_11: 1231655696
-      This is war 1_12: 1463227311
-      This is war 1_13: 1693091780
-      This is war 1_14: -1427504041
-      This is war 1_15: -1416316303
-      This is war 1_16: 986852853
-      This is war 1_17: -1785880213
-      This is war 1_18: -1308015024
-      This is war 1_19: -1694649327
-      This is war 1_2: -1268567760
-      This is war 1_20: 1236437498
-      This is war 1_21: 1556291667
-      This is war 1_22: 1145632386
-      This is war 1_23: -220293233
-      This is war 1_24: 2064082459
-      This is war 1_25: 2087179838
-      This is war 1_26: -216025729
-      This is war 1_27: -432120258
-      This is war 1_28: -2013182588
-      This is war 1_29: -334963447
-      This is war 1_3: 231407590
-      This is war 1_30: -64246477
-      This is war 1_31: -68215561
-      This is war 1_32: -592418422
-      This is war 1_33: -650053579
-      This is war 1_34: -9574928
-      This is war 1_4: -349343123
-      This is war 1_5: 1439429557
-      This is war 1_6: 787312231
-      This is war 1_7: -391573151
-      This is war 1_8: -2142070276
-      This is war 1_9: 2006574445
+      This is war 1_0: 964569021
+      This is war 1_1: 2065718913
+      This is war 1_10: 395180303
+      This is war 1_11: -1085081097
+      This is war 1_12: -911865956
+      This is war 1_13: -740242220
+      This is war 1_14: 26220349
+      This is war 1_15: 1288285389
+      This is war 1_16: 60784447
+      This is war 1_17: 1502318629
+      This is war 1_18: -734041793
+      This is war 1_19: 1570154679
+      This is war 1_2: 1544052784
+      This is war 1_20: -1042888415
+      This is war 1_21: 336734861
+      This is war 1_22: -362245525
+      This is war 1_23: 1222447457
+      This is war 1_24: -414957336
+      This is war 1_25: -2041850106
+      This is war 1_26: 2123652258
+      This is war 1_27: 1167936793
+      This is war 1_28: 1505449223
+      This is war 1_29: -1892936833
+      This is war 1_3: -1838648269
+      This is war 1_30: 1597790569
+      This is war 1_31: -1917612164
+      This is war 1_32: -1450747173
+      This is war 1_33: -1660961006
+      This is war 1_34: 1087715366
+      This is war 1_35: -478981223
+      This is war 1_36: -2145418495
+      This is war 1_37: -1700014101
+      This is war 1_38: -1306911798
+      This is war 1_39: -1206565316
+      This is war 1_4: 1360412374
+      This is war 1_40: -374452371
+      This is war 1_41: 776165742
+      This is war 1_42: -329675093
+      This is war 1_43: -250974057
+      This is war 1_44: 164755301
+      This is war 1_45: 203320736
+      This is war 1_46: -981121388
+      This is war 1_47: -653388917
+      This is war 1_48: 2082794821
+      This is war 1_49: 1771579805
+      This is war 1_5: -182222505
+      This is war 1_50: -1045505695
+      This is war 1_51: 1186892126
+      This is war 1_52: 1645513983
+      This is war 1_53: -1689403082
+      This is war 1_54: -438810287
+      This is war 1_55: -1410015547
+      This is war 1_56: -2101260002
+      This is war 1_57: -688949194
+      This is war 1_58: 1728422178
+      This is war 1_59: -587273421
+      This is war 1_6: 524458214
+      This is war 1_60: 713854776
+      This is war 1_61: 1321452213
+      This is war 1_62: 684365396
+      This is war 1_63: 1625841447
+      This is war 1_64: 53696037
+      This is war 1_65: 363730739
+      This is war 1_66: 220829820
+      This is war 1_67: -1503219567
+      This is war 1_68: -137357131
+      This is war 1_69: -932208264
+      This is war 1_7: 255713374
+      This is war 1_70: 1110820247
+      This is war 1_71: -990004544
+      This is war 1_72: -529632915
+      This is war 1_8: -314809423
+      This is war 1_9: 880156521
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -50,16 +50,8 @@ public class Tank : Vechicle
         if (Time.time - fireTimer < fireRate) return;
 
         fireTimer = Time.time;
-
-        float accuracy = 1 - bulletSpread;
-
-        for (int i = 0; i < bulletsPerShot; i++)
         {
-            float angle = Random.Range(-1f, 1f) * (1 - accuracy) * 90f;
-
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-
-            bullet.transform.Rotate(0, 0, angle);
         }
 
         currentAmmo--;
