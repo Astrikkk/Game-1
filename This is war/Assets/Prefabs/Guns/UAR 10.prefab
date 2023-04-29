@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2772645563217530041}
   - component: {fileID: 2772645563217530040}
   m_Layer: 0
-  m_Name: AK47
+  m_Name: UAR 10
   m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 203320736, guid: c2bc25078e70b624792c4e36c0e28a7b, type: 3}
+  m_Sprite: {fileID: -1045505695, guid: c2bc25078e70b624792c4e36c0e28a7b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -100,19 +100,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1332758587224277157, guid: cdbb1b8aaabbacf4fb05edb4fa91093c, type: 3}
-  bulletSpeed: 20
+  bulletSpeed: 30
   IsInArms: 0
-  maxAmmo: 30
-  reloadTime: 2
+  maxAmmo: 8
+  reloadTime: 10
   firePoint: {fileID: 2772645563217530036}
-  allAmmo: 60
-  fireRate: 0.1
+  allAmmo: 40
+  fireRate: 3
   bulletsPerShot: 1
-  bulletSpread: 0.1
+  bulletSpread: 0.005
   skin:
-  - {fileID: 203320736, guid: c2bc25078e70b624792c4e36c0e28a7b, type: 3}
-  - {fileID: -1410015547, guid: c2bc25078e70b624792c4e36c0e28a7b, type: 3}
-  damage: 10
+  - {fileID: -1045505695, guid: c2bc25078e70b624792c4e36c0e28a7b, type: 3}
+  - {fileID: -688949194, guid: c2bc25078e70b624792c4e36c0e28a7b, type: 3}
+  damage: 150
   CanBePickedUp: 1
 --- !u!61 &2772645563217530041
 BoxCollider2D:
@@ -131,7 +131,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.84, y: 0.23}
+    oldSize: {x: 1.02, y: 0.24}
     newSize: {x: 0.84, y: 0.23}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

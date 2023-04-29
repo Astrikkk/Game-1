@@ -11,7 +11,7 @@ public class Player : Health
     public GameObject GranatePrefab;
     public int GranateCount;
     public bool CanMove = true;
-
+    
 
 
     void Start()
@@ -24,11 +24,17 @@ public class Player : Health
         {
             if (gun != null) return;
             gun = other.gameObject;
+            if (gun.GetComponent<Pistol>().CanBePickedUp == false)
+            {
+                gun = null;
+                return;
+            }
             gun.transform.SetParent(transform);
             gun.transform.position = HoldPoint.transform.position;
             gun.transform.rotation = HoldPoint.transform.rotation;
             gun.GetComponent<Rigidbody2D>().isKinematic = true;
             gun.GetComponent<Pistol>().IsInArms = true;
+            gun.GetComponent<Pistol>().CanBePickedUp = false;
             gun.GetComponent<SpriteRenderer>().sprite = gun.GetComponent<Pistol>().skin[1];
 
         }
@@ -48,9 +54,11 @@ public class Player : Health
     }
     void GranateThrow()
     {
+        if (GranateCount <= 0) return;
         GameObject granate = Instantiate(GranatePrefab, ThrowPoint.transform.position, transform.rotation);
         Rigidbody2D bulletRb = granate.GetComponent<Rigidbody2D>();
         bulletRb.AddForce(transform.up * 10, ForceMode2D.Impulse);
+        GranateCount--;
     }
 
     void Update()
@@ -92,6 +100,7 @@ public class Player : Health
             gun.GetComponent<BoxCollider2D>().enabled = true;
             gun.GetComponent<Pistol>().IsInArms = false;
             gun.GetComponent<SpriteRenderer>().sprite = gun.GetComponent<Pistol>().skin[0];
+            gun.GetComponent<Pistol>().IvokePickUp();
             gun = null;
         }
     }

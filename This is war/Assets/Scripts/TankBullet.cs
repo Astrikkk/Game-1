@@ -14,6 +14,7 @@ public class TankBullet : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
+        if (other.gameObject.CompareTag("GoThrought")) return;
         if (FirstCol == true)
         {
             FirstCol = false;

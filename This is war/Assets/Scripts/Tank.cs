@@ -36,8 +36,11 @@ public class Tank : Vechicle
     private int currentAmmoTurret;
     private bool isReloadingTurret = false;
     private float distanceToEnemy;
-
-
+    public bool TurretActive = false;
+    private void Start()
+    {
+        mainCamera = Camera.main;
+    }
     void Update()
     {
         if (IsInCar == true)
@@ -47,6 +50,10 @@ public class Tank : Vechicle
             if (Input.GetMouseButton(0))
             {
                 Shoot();
+            }
+            if (Input.GetKeyUp(KeyCode.T))
+            {
+                TurretActive = !TurretActive;
             }
         }
         if (Input.GetKeyDown(KeyCode.F) && IsInCar == true)
@@ -131,6 +138,7 @@ public class Tank : Vechicle
     public void TurretShoot()
     {
         if (isReloadingTurret) return;
+        if (TurretActive == false) return;
 
         if (currentAmmoTurret <= 0)
         {

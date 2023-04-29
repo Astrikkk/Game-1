@@ -17,7 +17,7 @@ public class Wall : Health
     public override void TakeDamage(int damage)
     {
         HP -= damage;
-        if (HP <= 100)
+        if (HP <= 500)
         {
             wall.SetActive(false);
             Broken.SetActive(true);

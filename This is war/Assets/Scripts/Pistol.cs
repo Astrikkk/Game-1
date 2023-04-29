@@ -21,6 +21,7 @@ public class Pistol : MonoBehaviour
 
     private int currentAmmo;
     private bool isReloading = false;
+    public bool CanBePickedUp = true;
 
     private void Start()
     {
@@ -55,7 +56,14 @@ public class Pistol : MonoBehaviour
 
         currentAmmo--;
     }
-
+    public void IvokePickUp()
+    {
+        Invoke("CanPickUp", 3);
+    }
+    public void CanPickUp()
+    {
+        CanBePickedUp = !CanBePickedUp;
+    }
     private IEnumerator Reload()
     {
         if (allAmmo > 0)

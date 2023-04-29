@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2772645563217530041}
   - component: {fileID: 2772645563217530040}
   m_Layer: 0
-  m_Name: M4
+  m_Name: SVD
   m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -981121388, guid: c2bc25078e70b624792c4e36c0e28a7b, type: 3}
+  m_Sprite: {fileID: -653388917, guid: c2bc25078e70b624792c4e36c0e28a7b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -100,19 +100,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1332758587224277157, guid: cdbb1b8aaabbacf4fb05edb4fa91093c, type: 3}
-  bulletSpeed: 20
+  bulletSpeed: 30
   IsInArms: 0
-  maxAmmo: 30
-  reloadTime: 2
+  maxAmmo: 20
+  reloadTime: 5
   firePoint: {fileID: 2772645563217530036}
   allAmmo: 60
-  fireRate: 0.05
+  fireRate: 0.3
   bulletsPerShot: 1
-  bulletSpread: 0.1
+  bulletSpread: 0.005
   skin:
-  - {fileID: -981121388, guid: c2bc25078e70b624792c4e36c0e28a7b, type: 3}
-  - {fileID: -2101260002, guid: c2bc25078e70b624792c4e36c0e28a7b, type: 3}
-  damage: 7
+  - {fileID: -653388917, guid: c2bc25078e70b624792c4e36c0e28a7b, type: 3}
+  - {fileID: 1728422178, guid: c2bc25078e70b624792c4e36c0e28a7b, type: 3}
+  damage: 30
+  CanBePickedUp: 1
 --- !u!61 &2772645563217530041
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -130,7 +131,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.79, y: 0.28}
+    oldSize: {x: 0.99, y: 0.23}
     newSize: {x: 0.84, y: 0.23}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

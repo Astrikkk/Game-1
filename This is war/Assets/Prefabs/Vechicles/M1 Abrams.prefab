@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 444d444add8ba574e8cdf50e088ea329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 700
+  HP: 4000
   moveSpeed: 7
   rotateSpeed: 100
   broken: {fileID: 8269383613772844007}
@@ -277,6 +277,7 @@ MonoBehaviour:
   firePointTurret: {fileID: 4072825450780258936}
   maxAmmoTurret: 50
   reloadTimeTurret: 4
+  TurretActive: 0
 --- !u!61 &8269383612009036593
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -365,7 +366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8269383612354397775}
   m_Layer: 0
-  m_Name: Tank
+  m_Name: M1 Abrams
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

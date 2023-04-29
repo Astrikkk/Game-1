@@ -15,7 +15,7 @@ public class Vechicle : Health
     public bool IsInCar;
     protected bool IsColWithPlayer;
     public GameObject PlayerPoint;
-    protected void Start()
+    private void Awake()
     {
         player = GameObject.FindWithTag("Player");
     }

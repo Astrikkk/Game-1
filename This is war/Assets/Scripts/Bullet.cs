@@ -53,6 +53,7 @@ public class Bullet : MonoBehaviour
         {
             return;
         }
+        if (other.gameObject.CompareTag("GoThrought")) return;
         Health health = other.gameObject.GetComponent<Health>();
 
         if (health != null)
