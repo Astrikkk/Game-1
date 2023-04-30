@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tank : Vechicle
+public class EnemyTank : Health
 {
-    public Camera mainCamera;
+    public int moveSpeed = 5;
     public GameObject Tower;
-    private GameObject enemy;
+    private GameObject player;
     public GameObject Turret;
     [SerializeField] private float distanceToReact = 5f;
 
-    public float fireRate = 0.1f;
+    public float fireRate = 0.1f;    //Tower
     public int bulletsPerShot = 1;
     public float bulletSpread = 0.1f;
     public GameObject bulletPrefab;
@@ -22,9 +22,12 @@ public class Tank : Vechicle
     private int currentAmmo;
     private bool isReloading = false;
     public float rotationSpeed = 6f;
+    public GameObject broken;
+    public GameObject obj;
 
 
-    public float fireRateTurret = 0.1f;
+
+    public float fireRateTurret = 0.1f;    //Turret
     public int bulletsPerShotTurret = 1;
     public float bulletSpreadTurret = 0.1f;
     public GameObject bulletPrefabTurret;
@@ -37,33 +40,43 @@ public class Tank : Vechicle
     private bool isReloadingTurret = false;
     private float distanceToEnemy;
     public bool TurretActive = false;
-    private void Start()
-    {
-        mainCamera = Camera.main;
-    }
+
+
+    public bool IsPatroling;
+    public float rotateSpeed = 100f;
+    public float moveDuration = 1f;
+    private bool isMoving = false;
+    private float moveTimer = 0f;
+
+    private int randomDirection;
     void Update()
     {
-        if (IsInCar == true)
+    }
+    void FixedUpdate()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
         {
-            moveInput = Input.GetAxis("Vertical");
-            rotateInput = Input.GetAxis("Horizontal");
-            if (Input.GetMouseButton(0))
+            distanceToEnemy = Vector2.Distance(transform.position, player.transform.position);
+            Vector3 lookDirection = player.transform.position - transform.position;
+            float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90.0f;
+            Turret.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+
+            if (distanceToEnemy <= distanceToReact)
             {
+                Vector3 lookDirection2 = player.transform.position - transform.position;
+                float angle2 = Mathf.Atan2(lookDirection2.y, lookDirection2.x) * Mathf.Rad2Deg - 90.0f;
+                Tower.transform.rotation = Quaternion.AngleAxis(angle2, Vector3.forward);
+                TurretShoot();
                 Shoot();
             }
-            if (Input.GetKeyUp(KeyCode.T))
+            else
             {
-                TurretActive = !TurretActive;
+                Move();
             }
         }
-        if (Input.GetKeyDown(KeyCode.F) && IsInCar == true)
-        {
-            Sit();
-        }
-        if (Input.GetKeyDown(KeyCode.F) && IsColWithPlayer == true)
-        {
-            Sit();
-        }
+
     }
     public void Shoot()
     {
@@ -93,45 +106,41 @@ public class Tank : Vechicle
         isReloading = false;
 
     }
-    void FixedUpdate()
+    private void Move()
     {
-        Vector3 mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-        mousePosition.z = transform.position.z;
-        enemy = GameObject.FindGameObjectWithTag("Enemy");
-        if (IsInCar == true)
+        if (isMoving && IsPatroling)
         {
-            transform.Translate(Vector2.up * moveInput * moveSpeed * Time.fixedDeltaTime);
-            transform.Rotate(Vector3.forward, -rotateInput * rotateSpeed * Time.fixedDeltaTime);
-            Vector3 lookDirection = mousePosition - transform.position;
-            float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90.0f;
-            Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
-            Tower.transform.rotation = Quaternion.Lerp(Tower.transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
-            if (enemy != null)
+
+            // переміщення в рандомному напрямку
+            transform.Translate(Vector3.up * moveSpeed * Time.deltaTime);
+
+
+            // таймер переміщення
+            moveTimer += Time.deltaTime;
+
+            // якщо час переміщення вичерпано
+            if (moveTimer >= moveDuration)
             {
-                distanceToEnemy = Vector2.Distance(transform.position, enemy.transform.position);
-                Vector3 lookDirection2 = enemy.transform.position - transform.position;
-                float angle2 = Mathf.Atan2(lookDirection2.y, lookDirection2.x) * Mathf.Rad2Deg - 90.0f;
-                Turret.transform.rotation = Quaternion.AngleAxis(angle2, Vector3.forward);
-
-
-                if (distanceToEnemy <= distanceToReact)
-                {
-                    TurretShoot();
-                }
+                // зупинка та розвертання
+                isMoving = false;
+                moveTimer = 0f;
+                transform.Rotate(Vector3.forward, randomDirection * rotateSpeed * Time.fixedDeltaTime);
             }
-
-
-
         }
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player")) IsColWithPlayer = true;
+        else
+        {
+            // якщо не рухається, таймер для очікування
+            moveTimer += Time.deltaTime;
 
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player")) IsColWithPlayer = false;
+            // якщо час очікування вичерпано
+            if (moveTimer >= moveDuration)
+            {
+                // продовження руху в новому рандомному напрямку
+                isMoving = true;
+                moveTimer = 0f;
+                randomDirection = Random.Range(0, 360);
+            }
+        }
     }
     public void TurretShoot()
     {
@@ -155,7 +164,7 @@ public class Tank : Vechicle
 
             GameObject bullet = Instantiate(bulletPrefabTurret, firePointTurret.position, firePointTurret.rotation);
 
-            bullet.transform.Rotate(0, 0, angle + 90);
+            bullet.transform.Rotate(0, 0, angle);
 
             Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
             bulletRb.AddForce(firePointTurret.up * bulletSpeedTurret, ForceMode2D.Impulse);
@@ -172,5 +181,18 @@ public class Tank : Vechicle
         currentAmmoTurret = maxAmmoTurret;
         isReloadingTurret = false;
 
+    }
+
+    public override void TakeDamage(int damage)
+    {
+        HP -= damage;
+        if (HP <= 0) Kill();
+    }
+    protected virtual void Kill()
+    {
+        broken.SetActive(true);
+        broken.transform.position = obj.transform.position;
+        broken.transform.rotation = obj.transform.rotation;
+        obj.SetActive(false);
     }
 }

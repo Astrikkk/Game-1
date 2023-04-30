@@ -60,6 +60,7 @@ public class Enemy : Health
                     if (IsPatroling) Patrol();
                     else Move();
                 }
+
             }
         }
     }
@@ -165,15 +166,10 @@ public class Enemy : Health
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            StartCoroutine(Stun());
-        }
-        if (other.gameObject.CompareTag("Bullet"))
-        {
-            HP -= other.gameObject.GetComponent<Bullet>().damage;
-            if (HP <= 0) Destroy(gameObject);
-        }
+        //if (other.gameObject.CompareTag("Player"))
+        //{
+        //    StartCoroutine(Stun());
+        //}
     }
     private IEnumerator Reload()
     {
