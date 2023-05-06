@@ -1,0 +1,1847 @@
+fileFormatVersion: 2
+guid: d2097e056e93a554dadee5b53ae7910a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Embient ThisIsWar_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1000
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1234ca5cb7aafa045bec923faec0c9ec
+      internalID: -1107007611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1000
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12cce09e8e9baf4082145e2bae8938c
+      internalID: -583053545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1000
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd50f3d3299e0d945b39b5fbc08c5860
+      internalID: -2007070188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1000
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baaa2183234afb3438f153fd210835d5
+      internalID: -821236448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1000
+        width: 240
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82d85500a67b414cbe086996c516497
+      internalID: -439202040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_5
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1000
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae6a6e79fb21b843afa6f9499c64eda
+      internalID: -1269814153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_6
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 760
+        width: 303
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bfc7764a86164544a681be5a003b2f1
+      internalID: -1967015714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 920
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d57a468a65e8d146ae06a6c34799166
+      internalID: 1097553223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_8
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 920
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473baaa9bbae92145b5c40a757dfd6c8
+      internalID: -1162305573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_9
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 920
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61342b2a43c3a1849b849019b772623e
+      internalID: -1451768540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_10
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 920
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57926844e349f214398c94344e444089
+      internalID: -496188364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_11
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 920
+        width: 240
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43898c603f3ec0648a7f97aa06f220e1
+      internalID: -809587065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_12
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 920
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207385745fb171f4baa44a3783849c4b
+      internalID: 1558989136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_13
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 842
+        width: 59
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40ecfadf9e0dc84cbdb561297647922
+      internalID: -353444027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_14
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 840
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475009d9e35f1d24f81a6aafac4101ee
+      internalID: 1213386163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_15
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 840
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1489266fa97cb4f4187bfb6636296af2
+      internalID: 909876225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_16
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 537
+        width: 368
+        height: 367
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c07dd53cbc26c740a355c5ac164b07a
+      internalID: 512179646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 762
+        width: 61
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c9a9cb47320fc4aaf1553a1c106bde
+      internalID: -197772113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_18
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 767
+        width: 58
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3f4779040c053449c851a10c786a51
+      internalID: -587909202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_19
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 761
+        width: 63
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07242731bf76e0e40a10b695ad56486d
+      internalID: 1028138617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_20
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 704
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd20856c71fbdd24cb0412fc4f3f5af5
+      internalID: 592922518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_21
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 703
+        width: 46
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f972fdec54fcd4ab8ff8511214da2e
+      internalID: 1840624191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 712
+        width: 64
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea348a5508cd2c408cac1950d942ed7
+      internalID: -981948155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_23
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 664
+        width: 272
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf48387ae0a25674f80e570c188eb795
+      internalID: 1055655760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 680
+        width: 64
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 968b383446071d442bc5baffe084d6b0
+      internalID: -1707433715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_27
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 643
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489a518f882d01246ab34658cd7d9923
+      internalID: 1651006846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_28
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 648
+        width: 64
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68a07b5647092946b9976cdcd829093
+      internalID: -102470281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_29
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 632
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853028783fc8a4a4389bc29b2e6fb4e4
+      internalID: 1585281918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_30
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 628
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebdbc6066af342f42bc96d5be8ceeb1f
+      internalID: 144043140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_31
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 594
+        width: 12
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9db038ff81a9c4f9a18800d4907f44
+      internalID: -1184632755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_32
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 584
+        width: 19
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa60139c61ed1a44ab2d7804e776b72d
+      internalID: -1048920456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_33
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 633
+        width: 64
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa49e5a738bbdd6448c73d51e8c1421d
+      internalID: -21314149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_34
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 600
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2392e7a3e3a5c424abb0b7f2916555da
+      internalID: 844193567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_36
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 568
+        width: 80
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a9bc7ad5ab7c0546bba9f6101e3b989
+      internalID: 998360803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_37
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 568
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5405732c791dc4c45885035323a3f5ac
+      internalID: -1407194643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_38
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 517
+        width: 142
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96df07d5220a9f44d8a952c629a3e9fa
+      internalID: -1217185444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_39
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 535
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eaefa79cb8275b459d9dc0245acd99d
+      internalID: -950134863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_40
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 535
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e862e5b19a9814980db47548d92cf1
+      internalID: -545413325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_41
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 535
+        width: 27
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03135683e9f6e446a2b3474c1952075
+      internalID: -1509652600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_46
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 482
+        width: 19
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4c3a14a1d3b6444bfa5cecafae06d1
+      internalID: 804114580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_53
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 381
+        width: 67
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bac8aaa76d20884097e1c432dddc39e
+      internalID: 1593687376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_54
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 503
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d65ee21774ecf41a1fe3239f55e1cf
+      internalID: -28735632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_55
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 503
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 688e9f837982def40b6a7164406ea9fb
+      internalID: -475590219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_56
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 503
+        width: 27
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb75af2688b6b44e9d3c0b614d6e291
+      internalID: -860331939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_57
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 392
+        width: 16
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec46019faf14c144817fc5a3184a51c
+      internalID: 62271405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_59
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 472
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f8665e62d135f44b3aeed0b86d2a47
+      internalID: -1369473982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_60
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 472
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac6add51b6756d48b967360988819f4
+      internalID: -1706042181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_61
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 433
+        width: 176
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f414d8397f9ff42a26ceb86be4b401
+      internalID: 465648738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_62
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 392
+        width: 32
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73c0ecb37fb27f4283bcb373455bcc0
+      internalID: -2136249373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_63
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 392
+        width: 32
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92c2610a9d1c1b43aa73d0a768cccf8
+      internalID: 677736030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_64
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 392
+        width: 3
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498be1bf789601342922abe9eb7f7675
+      internalID: -982039665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_68
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 456
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d973e50c1c187049ae24a574c08696e
+      internalID: -1190696648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_71
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 392
+        width: 30
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed66a9066aff264e96aff647479cf9f
+      internalID: -1440173936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_72
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 407
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a8bb87335671e44891e49056c60f04
+      internalID: 948896601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_73
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 360
+        width: 511
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a69f929c042a3a4a9c90e24410c60fc
+      internalID: -1893038749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_74
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 382
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572e8b9cd8674ce4f8c6b5ced5ce5de5
+      internalID: -442609990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_75
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 358
+        width: 52
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb04985441c89a04b89c2913b32bba9b
+      internalID: 837061387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_76
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 8
+        width: 241
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57653208a0ae4f4cb191aa9535a0dd5
+      internalID: -1197231651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_77
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 7
+        width: 241
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b982a5ac263fb5740a77d8a86c427f72
+      internalID: -620327261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_78
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 324
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffba1f15e2cbc2f4ca60b9f186c58a27
+      internalID: 1325302649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_79
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 297
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f651922f64b9242920104c739f0970
+      internalID: -1318565837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_80
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 284
+        width: 56
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac84977e9bc2cd4d97a9621eb169fea
+      internalID: 2018242501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_81
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 280
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9426d3cf18a45e9479b1a4e27f99b1f6
+      internalID: -7999136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_82
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 232
+        width: 32
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88606f29904882489d85a7053cb4557
+      internalID: -1863109968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_83
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 8
+        width: 240
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd68add4b5543044aa8c075889282d4
+      internalID: -1501610202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_84
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 232
+        width: 48
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a44bd7cec9aeb45a2e4a0aa8758da4
+      internalID: 113695536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_85
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 156
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a65edba0ecd6f408a40cec56e99f03
+      internalID: -1165633202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_86
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 172
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fac382fc66c7eb44b555f2ea94b4a00
+      internalID: 1199341199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_87
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 136
+        width: 20
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ffeeb96a2ad8aa469e78b5f6f2688c1
+      internalID: 1936520687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_88
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 72
+        width: 48
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab5b794fc6f7bd4c9a0b720d211718d
+      internalID: -645993246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_89
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 108
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef90e0d7971ef33498117e96f2d9f706
+      internalID: -1382122115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_90
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 124
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cecbdc18d9b5b74d9d004e1c57fd253
+      internalID: 452509322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_91
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 76
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1bd82246f37d84abf40aff795a4e02
+      internalID: -193204289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_92
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 86
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d4d9b4d065873469d06e9f5cf90167
+      internalID: -884141491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_93
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 20
+        width: 129
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4830e2493f07d5046bc45d8a9b3bec18
+      internalID: -1047026960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_94
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 40
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141a1734ebe7f7542b5955b276884e96
+      internalID: -1760220346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Embient ThisIsWar_25
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 520
+        width: 80
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525675d6706bd084bb9c700f9a33caec
+      internalID: -46322248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Embient ThisIsWar_0: -1107007611
+      Embient ThisIsWar_1: -583053545
+      Embient ThisIsWar_10: -496188364
+      Embient ThisIsWar_11: -809587065
+      Embient ThisIsWar_12: 1558989136
+      Embient ThisIsWar_13: -353444027
+      Embient ThisIsWar_14: 1213386163
+      Embient ThisIsWar_15: 909876225
+      Embient ThisIsWar_16: 512179646
+      Embient ThisIsWar_17: -197772113
+      Embient ThisIsWar_18: -587909202
+      Embient ThisIsWar_19: 1028138617
+      Embient ThisIsWar_2: -2007070188
+      Embient ThisIsWar_20: 592922518
+      Embient ThisIsWar_21: 1840624191
+      Embient ThisIsWar_22: -981948155
+      Embient ThisIsWar_23: 1055655760
+      Embient ThisIsWar_24: -1707433715
+      Embient ThisIsWar_25: -46322248
+      Embient ThisIsWar_26: -175853469
+      Embient ThisIsWar_27: 1651006846
+      Embient ThisIsWar_28: -102470281
+      Embient ThisIsWar_29: 1585281918
+      Embient ThisIsWar_3: -821236448
+      Embient ThisIsWar_30: 144043140
+      Embient ThisIsWar_31: -1184632755
+      Embient ThisIsWar_32: -1048920456
+      Embient ThisIsWar_33: -21314149
+      Embient ThisIsWar_34: 844193567
+      Embient ThisIsWar_35: 822675616
+      Embient ThisIsWar_36: 998360803
+      Embient ThisIsWar_37: -1407194643
+      Embient ThisIsWar_38: -1217185444
+      Embient ThisIsWar_39: -950134863
+      Embient ThisIsWar_4: -439202040
+      Embient ThisIsWar_40: -545413325
+      Embient ThisIsWar_41: -1509652600
+      Embient ThisIsWar_42: 186158445
+      Embient ThisIsWar_43: -877305031
+      Embient ThisIsWar_44: -506130250
+      Embient ThisIsWar_45: -2133022400
+      Embient ThisIsWar_46: 804114580
+      Embient ThisIsWar_47: 901215044
+      Embient ThisIsWar_48: -2119055232
+      Embient ThisIsWar_49: 20911008
+      Embient ThisIsWar_5: -1269814153
+      Embient ThisIsWar_50: 44019297
+      Embient ThisIsWar_51: -1708203312
+      Embient ThisIsWar_52: 277632546
+      Embient ThisIsWar_53: 1593687376
+      Embient ThisIsWar_54: -28735632
+      Embient ThisIsWar_55: -475590219
+      Embient ThisIsWar_56: -860331939
+      Embient ThisIsWar_57: 62271405
+      Embient ThisIsWar_58: 1848475777
+      Embient ThisIsWar_59: -1369473982
+      Embient ThisIsWar_6: -1967015714
+      Embient ThisIsWar_60: -1706042181
+      Embient ThisIsWar_61: 465648738
+      Embient ThisIsWar_62: -2136249373
+      Embient ThisIsWar_63: 677736030
+      Embient ThisIsWar_64: -982039665
+      Embient ThisIsWar_65: 2145902335
+      Embient ThisIsWar_66: -1202732666
+      Embient ThisIsWar_67: -801965988
+      Embient ThisIsWar_68: -1190696648
+      Embient ThisIsWar_69: 689616321
+      Embient ThisIsWar_7: 1097553223
+      Embient ThisIsWar_70: 1741092604
+      Embient ThisIsWar_71: -1440173936
+      Embient ThisIsWar_72: 948896601
+      Embient ThisIsWar_73: -1893038749
+      Embient ThisIsWar_74: -442609990
+      Embient ThisIsWar_75: 837061387
+      Embient ThisIsWar_76: -1197231651
+      Embient ThisIsWar_77: -620327261
+      Embient ThisIsWar_78: 1325302649
+      Embient ThisIsWar_79: -1318565837
+      Embient ThisIsWar_8: -1162305573
+      Embient ThisIsWar_80: 2018242501
+      Embient ThisIsWar_81: -7999136
+      Embient ThisIsWar_82: -1863109968
+      Embient ThisIsWar_83: -1501610202
+      Embient ThisIsWar_84: 113695536
+      Embient ThisIsWar_85: -1165633202
+      Embient ThisIsWar_86: 1199341199
+      Embient ThisIsWar_87: 1936520687
+      Embient ThisIsWar_88: -645993246
+      Embient ThisIsWar_89: -1382122115
+      Embient ThisIsWar_9: -1451768540
+      Embient ThisIsWar_90: 452509322
+      Embient ThisIsWar_91: -193204289
+      Embient ThisIsWar_92: -884141491
+      Embient ThisIsWar_93: -1047026960
+      Embient ThisIsWar_94: -1760220346
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
