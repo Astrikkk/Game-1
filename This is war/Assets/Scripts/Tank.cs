@@ -109,9 +109,8 @@ public class Tank : Vechicle
             if (enemy != null)
             {
                 distanceToEnemy = Vector2.Distance(transform.position, enemy.transform.position);
-                Vector3 lookDirection2 = enemy.transform.position - transform.position;
-                float angle2 = Mathf.Atan2(lookDirection2.y, lookDirection2.x) * Mathf.Rad2Deg - 90.0f;
-                Turret.transform.rotation = Quaternion.AngleAxis(angle2, Vector3.forward);
+                RotateToObject();
+
 
 
                 if (distanceToEnemy <= distanceToReact)
@@ -123,6 +122,26 @@ public class Tank : Vechicle
 
 
         }
+    }
+    public void RotateToObject()
+    {
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Enemy");
+        List<float> distances = new List<float>();
+
+        foreach (GameObject player in players)
+        {
+            float distance = Vector2.Distance(transform.position, player.transform.position);
+            distances.Add(distance);
+        }
+
+        float minDistance = Mathf.Min(distances.ToArray());
+        int minIndex = distances.IndexOf(minDistance);
+        GameObject nearestPlayer = players[minIndex];
+
+        Vector3 direction = nearestPlayer.transform.position - transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90;
+        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        Turret.transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

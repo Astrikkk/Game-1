@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +8,10 @@ public class BuildPoint : MonoBehaviour
     public GameObject showBuild;
     public bool CanBuild = true;
     public List<GameObject> buildedObjects;
+    public float buildDistance = 2.0f;
+    public LayerMask collisionLayer;
+
+    private GameObject currentObject;
 
     private void Update()
     {
@@ -14,18 +19,32 @@ public class BuildPoint : MonoBehaviour
         {
             OpenMenu();
         }
+
+        if (currentObject != null)
+        {
+            Vector3 mousePos = Input.mousePosition;
+            mousePos.z = 10.0f;
+            Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, worldPos - transform.position, buildDistance, collisionLayer);
+
+            if (hit.collider != null && hit.collider.gameObject != currentObject)
+            {
+                Destroy(currentObject);
+            }
+
+            currentObject.transform.position = hit.point;
+        }
     }
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if (!other.CompareTag("Gun"))
-            CanBuild = false;
+        CanBuild = false;
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (!other.CompareTag("Gun"))
-            CanBuild = true;
+        CanBuild = true;
     }
 
     public void OpenMenu()
@@ -50,6 +69,12 @@ public class BuildPoint : MonoBehaviour
         {
             player.CanMove = true;
         }
+
+        if (currentObject != null)
+        {
+            Destroy(currentObject);
+            currentObject = null;
+        }
     }
 
     public void BuildObj(int number)
@@ -60,8 +85,15 @@ public class BuildPoint : MonoBehaviour
             return;
         }
 
-        Instantiate(buildedObjects[number], transform.position, transform.rotation).transform.SetParent(null);
+        currentObject = Instantiate(buildedObjects[number], transform.position, Quaternion.identity);
 
         CloseMenu();
+    }
+
+    private IEnumerator DestroyObjectAfterDelay(GameObject obj, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        Destroy(obj);
     }
 }

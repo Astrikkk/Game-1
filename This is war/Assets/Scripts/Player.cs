@@ -4,7 +4,6 @@ public class Player : Health
 {
     public float moveSpeed = 5.0f;
     private Camera mainCamera;
-    public GameObject gunPrefab;
     public GameObject HoldPoint;
     public GameObject ThrowPoint;
     private GameObject gun;

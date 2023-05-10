@@ -30,17 +30,7 @@ public class Wall : Health
                     destroyed = true;
                 }
             }
-            else if (Broken.Count > 0)
-            {
-                if (HP <= 0)
-                {
-                    Broken[0].SetActive(false);
-                    Broken[1].SetActive(true);
-                    _collider.enabled = false;
-                    destroyed = true;
-                }
-            }
-            else if (Broken.Count > 1)
+            else if (Broken.Count > 2 && Broken.Count < 4)
             {
                 if (HP <= BrokeDamage)
                 {
@@ -56,6 +46,17 @@ public class Wall : Health
                     destroyed = true;
                 }
                 return;
+            }
+            else if (Broken.Count > 1 && Broken.Count < 3)
+            {
+                if (HP <= 0)
+                {
+                    Broken[0].SetActive(false);
+                    Broken[1].SetActive(true);
+                    _collider.enabled = false;
+                    destroyed = true;
+                    return;
+                }
             }
         }
     }

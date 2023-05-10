@@ -120,6 +120,7 @@ Transform:
   - {fileID: 4421835322201911442}
   - {fileID: 4421835323072727895}
   - {fileID: 4421835322354724415}
+  - {fileID: 8212496755474312485}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -189,7 +190,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP: 100
   moveSpeed: 5
-  gunPrefab: {fileID: 0}
   HoldPoint: {fileID: 4421835322201911441}
   ThrowPoint: {fileID: 4421835323072727894}
   GranatePrefab: {fileID: 64382368516132851, guid: b512ae2c45380cf4b93b03f6c7d4e269, type: 3}
@@ -407,4 +407,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4421835321977823543}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6758638338516180502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8212496755474312485}
+  m_Layer: 0
+  m_Name: UKRpoint
+  m_TagString: Ukr
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8212496755474312485
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758638338516180502}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4421835321977823543}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

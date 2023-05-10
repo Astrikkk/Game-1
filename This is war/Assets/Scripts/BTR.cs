@@ -78,7 +78,8 @@ public class BTR : Vechicle
         if (IsInCar == true)
         {
             transform.Translate(Vector2.up * moveInput * moveSpeed * Time.fixedDeltaTime);
-            transform.Rotate(Vector3.forward, -rotateInput * rotateSpeed * Time.fixedDeltaTime);
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
+                transform.Rotate(Vector3.forward, -rotateInput * rotateSpeed * Time.fixedDeltaTime);
             Vector3 lookDirection = mousePosition - transform.position;
             float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90.0f;
             Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);

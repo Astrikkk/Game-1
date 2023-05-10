@@ -14,6 +14,8 @@ TagManager:
   - GranateHit
   - Wall
   - GoThrought
+  - Teammate
+  - Ukr
   layers:
   - Default
   - TransparentFX

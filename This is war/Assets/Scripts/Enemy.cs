@@ -34,6 +34,7 @@ public class Enemy : Health
 
 
     private int randomDirection;
+    public float rotationSpeed = 5f;
 
     private void Start()
     {
@@ -42,7 +43,7 @@ public class Enemy : Health
 
     private void FixedUpdate()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = CheckNearestObjec("Ukr");
         if (!isStunned)
         {
             if (player != null)
@@ -51,9 +52,7 @@ public class Enemy : Health
                 if (distanceToPlayer <= distanceToReact)
                 {
                     Shoot();
-                    Vector3 lookDirection = player.transform.position - transform.position;
-                    float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90.0f;
-                    transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+                    RotateToObject();
                 }
                 else
                 {
@@ -64,6 +63,46 @@ public class Enemy : Health
             }
         }
     }
+    GameObject CheckNearestObjec(string Tag)
+    {
+        GameObject check = GameObject.FindGameObjectWithTag(Tag);
+        if (check == null) return null;
+        GameObject[] players = GameObject.FindGameObjectsWithTag(Tag);
+        List<float> distances = new List<float>();
+
+
+        foreach (GameObject player in players)
+        {
+            float distance = Vector2.Distance(transform.position, player.transform.position);
+            distances.Add(distance);
+        }
+
+        float minDistance = Mathf.Min(distances.ToArray());
+        int minIndex = distances.IndexOf(minDistance);
+        GameObject nearestPlayer = players[minIndex];
+        return nearestPlayer;
+    }
+    public void RotateToObject()
+    {
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Ukr");
+        List<float> distances = new List<float>();
+
+        foreach (GameObject player in players)
+        {
+            float distance = Vector2.Distance(transform.position, player.transform.position);
+            distances.Add(distance);
+        }
+
+        float minDistance = Mathf.Min(distances.ToArray());
+        int minIndex = distances.IndexOf(minDistance);
+        GameObject nearestPlayer = players[minIndex];
+
+        Vector3 direction = nearestPlayer.transform.position - transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90;
+        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
+    }
+
     private void Move()
     {
         if (isMoving)

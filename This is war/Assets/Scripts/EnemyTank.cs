@@ -9,6 +9,10 @@ public class EnemyTank : Health
     private GameObject player;
     public GameObject Turret;
     [SerializeField] private float distanceToReact = 5f;
+    [SerializeField] private List<Transform> patrolPoints;
+    private int currentPatrolPointIndex;
+    private bool isPatrollingForward = true;
+    public bool IsPatroling;
 
     public float fireRate = 0.1f;    //Tower
     public int bulletsPerShot = 1;
@@ -42,38 +46,97 @@ public class EnemyTank : Health
     public bool TurretActive = false;
 
 
-    public bool IsPatroling;
     public float rotateSpeed = 100f;
     public float moveDuration = 1f;
     private bool isMoving = false;
     private float moveTimer = 0f;
 
     private int randomDirection;
+    private Quaternion targetRotation;
     void Update()
     {
     }
     void FixedUpdate()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = CheckNearestObjec("Ukr");
         if (player != null)
         {
             distanceToEnemy = Vector2.Distance(transform.position, player.transform.position);
-            Vector3 lookDirection = player.transform.position - transform.position;
-            float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90.0f;
-            Turret.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
 
             if (distanceToEnemy <= distanceToReact)
             {
-                Vector3 lookDirection2 = player.transform.position - transform.position;
-                float angle2 = Mathf.Atan2(lookDirection2.y, lookDirection2.x) * Mathf.Rad2Deg - 90.0f;
-                Tower.transform.rotation = Quaternion.AngleAxis(angle2, Vector3.forward);
+                RotateToObject();
                 TurretShoot();
                 Shoot();
             }
             else
             {
-                Move();
+                if (IsPatroling) Patrol();
+                else Move();
+            }
+        }
+
+    }
+    public void RotateToObject()
+    {
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Ukr");
+        List<float> distances = new List<float>();
+
+        foreach (GameObject player in players)
+        {
+            float distance = Vector2.Distance(transform.position, player.transform.position);
+            distances.Add(distance);
+        }
+
+        float minDistance = Mathf.Min(distances.ToArray());
+        int minIndex = distances.IndexOf(minDistance);
+        GameObject nearestPlayer = players[minIndex];
+
+        Vector3 direction = nearestPlayer.transform.position - transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90;
+        Tower.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        Turret.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+    }
+    GameObject CheckNearestObjec(string Tag)
+    {
+        GameObject check = GameObject.FindGameObjectWithTag(Tag);
+        if (check == null) return null;
+        GameObject[] players = GameObject.FindGameObjectsWithTag(Tag);
+        List<float> distances = new List<float>();
+
+
+        foreach (GameObject player in players)
+        {
+            float distance = Vector2.Distance(transform.position, player.transform.position);
+            distances.Add(distance);
+        }
+
+        float minDistance = Mathf.Min(distances.ToArray());
+        int minIndex = distances.IndexOf(minDistance);
+        GameObject nearestPlayer = players[minIndex];
+        return nearestPlayer;
+    }
+    private void Patrol()
+    {
+        if (patrolPoints.Count == 0) return;
+
+        Transform currentPatrolPoint = patrolPoints[currentPatrolPointIndex];
+
+        Vector2 direction = currentPatrolPoint.position - transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
+        Quaternion targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotateSpeed * Time.deltaTime);
+
+        transform.position = Vector2.MoveTowards(transform.position, currentPatrolPoint.position, moveSpeed * Time.deltaTime);
+
+        if (Vector2.Distance(transform.position, currentPatrolPoint.position) < 0.1f)
+        {
+            currentPatrolPointIndex++;
+
+            if (currentPatrolPointIndex >= patrolPoints.Count)
+            {
+                IsPatroling = false;
             }
         }
 
@@ -110,38 +173,35 @@ public class EnemyTank : Health
     {
         if (isMoving && IsPatroling)
         {
-
-            // переміщення в рандомному напрямку
             transform.Translate(Vector3.up * moveSpeed * Time.deltaTime);
 
-
-            // таймер переміщення
             moveTimer += Time.deltaTime;
 
-            // якщо час переміщення вичерпано
             if (moveTimer >= moveDuration)
             {
-                // зупинка та розвертання
                 isMoving = false;
                 moveTimer = 0f;
-                transform.Rotate(Vector3.forward, randomDirection * rotateSpeed * Time.fixedDeltaTime);
+                targetRotation = Quaternion.Euler(0, 0, randomDirection);
             }
         }
         else
         {
-            // якщо не рухається, таймер для очікування
             moveTimer += Time.deltaTime;
 
-            // якщо час очікування вичерпано
             if (moveTimer >= moveDuration)
             {
-                // продовження руху в новому рандомному напрямку
                 isMoving = true;
                 moveTimer = 0f;
                 randomDirection = Random.Range(0, 360);
             }
         }
+
+        if (transform.rotation != targetRotation)
+        {
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotateSpeed * Time.deltaTime);
+        }
     }
+
     public void TurretShoot()
     {
         if (isReloadingTurret) return;
