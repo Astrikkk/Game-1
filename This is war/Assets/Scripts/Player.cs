@@ -10,6 +10,7 @@ public class Player : Health
     public GameObject GranatePrefab;
     public int GranateCount;
     public bool CanMove = true;
+    public bool UsingArtilery = false;
     
 
 

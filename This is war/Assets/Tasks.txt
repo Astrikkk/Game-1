@@ -1,0 +1,14 @@
+Animations
+2D light
+Shoot particles for tanks
+binoculars
+scope
+Improve Mortar
+Map (when lvl will be finished)
+Improve Enemy and Teammate AI
+new objects of embient
+sounds
+music
+UI elements
+Main menu
+Levels
