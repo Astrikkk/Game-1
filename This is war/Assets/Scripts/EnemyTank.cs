@@ -171,7 +171,7 @@ public class EnemyTank : Health
     }
     private void Move()
     {
-        if (isMoving && IsPatroling)
+        if (isMoving && !IsPatroling)
         {
             transform.Translate(Vector3.up * moveSpeed * Time.deltaTime);
 
