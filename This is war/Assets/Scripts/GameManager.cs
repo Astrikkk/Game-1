@@ -8,14 +8,17 @@ public class GameManager : MonoBehaviour
     public GameObject LooseMenu;
     private GameObject[] enemies;
     private GameObject player;
+    public static int CurrentLVL = 0;
     public void LoadScene(int a)
     {
+        CurrentLVL = LevelManager.CurrentLVL;
         SceneManager.LoadScene(a);
     }
     private void Start()
     {
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
         player = GameObject.FindGameObjectWithTag("Player");
+        CurrentLVL = LevelManager.CurrentLVL;
     }
     private void FixedUpdate()
     {
@@ -26,6 +29,8 @@ public class GameManager : MonoBehaviour
             if (enemies.Length <= 0)
             {
                 WinMenu.SetActive(true);
+                PlayerPrefs.SetInt("IsGameWon", 1);
+                PlayerPrefs.Save();
                 IsInBattle = false;
             }
             if (player == null)
@@ -39,11 +44,13 @@ public class GameManager : MonoBehaviour
     {
         int currentIndex = SceneManager.GetActiveScene().buildIndex;
         int nextIndex = (currentIndex + 1) % SceneManager.sceneCountInBuildSettings;
+        CurrentLVL = LevelManager.CurrentLVL;
         SceneManager.LoadScene(nextIndex);
     }
 
     public void ReloadScene()
     {
+        CurrentLVL = LevelManager.CurrentLVL;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
