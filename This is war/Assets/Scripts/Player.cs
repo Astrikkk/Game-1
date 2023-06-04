@@ -11,12 +11,15 @@ public class Player : Health
     public int GranateCount;
     public bool CanMove = true;
     public bool UsingArtilery = false;
-    
+    private Animator Animation;
 
+    private bool isMoving;
+    private bool isWithGun;
 
     void Start()
     {
         mainCamera = Camera.main;
+        Animation = GetComponent<Animator>();
     }
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -70,8 +73,31 @@ public class Player : Health
         float vertical = Input.GetAxis("Vertical");
         if (CanMove)
         {
+            isWithGun = (gun != null);
+            isMoving = (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0);
+
+            Animation.SetBool("IsWithGun", isWithGun);
+            Animation.SetBool("IsMoving", isMoving);
             Vector2 direction = new Vector2(horizontal, vertical).normalized;
             transform.position += new Vector3(direction.x, direction.y, 0.0f) * moveSpeed * Time.deltaTime;
+
+            if (isMoving)
+            {
+                if (gun == null)
+                {
+                    // Відтворення анімації без руху, коли gun == null
+                    Animation.Play("ZSU1Anim without gun 1");
+                }
+                else
+                {
+                    // Відтворення іншої анімації без руху, коли gun != null
+                    Animation.Play("ZSU1Anim with gun");
+                }
+            }
+            else
+            {
+                Animation.StopPlayback();
+            }
 
             Vector3 lookDirection = mousePosition - transform.position;
             float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90.0f;
@@ -103,5 +129,13 @@ public class Player : Health
             gun.GetComponent<Pistol>().IvokePickUp();
             gun = null;
         }
+    }
+    public override void TakeDamage(int damage)
+    {
+        if (HP <= 50)
+        {
+            mainCamera.GetComponent<CameraController>().PostProcessing.enabled = true;
+        }
+        base.TakeDamage(damage);
     }
 }

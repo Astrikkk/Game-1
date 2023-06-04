@@ -37,6 +37,8 @@ public class Tank : Vechicle
     private bool isReloadingTurret = false;
     private float distanceToEnemy;
     public bool TurretActive = false;
+
+    public GameObject ShootExplosion;
     private void Start()
     {
         mainCamera = Camera.main;
@@ -79,6 +81,7 @@ public class Tank : Vechicle
         fireTimer = Time.time;
         {
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            GameObject shootExplosion = Instantiate(ShootExplosion, firePoint.position, firePoint.rotation);
         }
 
         currentAmmo--;

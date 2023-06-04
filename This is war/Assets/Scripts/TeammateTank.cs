@@ -60,6 +60,8 @@ public class TeammateTank : Vechicle
 
     private float currentRotation;
     private float _targetRotation;
+
+    public GameObject ShootExplosion;
     void FixedUpdate()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -178,6 +180,7 @@ public class TeammateTank : Vechicle
 
         fireTimer = Time.time;
         {
+            GameObject shootExplosion = Instantiate(ShootExplosion, firePoint.position, firePoint.rotation);
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         }
 

@@ -53,6 +53,8 @@ public class EnemyTank : Health
 
     private int randomDirection;
     private Quaternion targetRotation;
+
+    public GameObject ShootExplosion;
     void Update()
     {
     }
@@ -154,6 +156,7 @@ public class EnemyTank : Health
 
         fireTimer = Time.time;
         {
+            GameObject shootExplosion = Instantiate(ShootExplosion, firePoint.position, firePoint.rotation);
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         }
 
