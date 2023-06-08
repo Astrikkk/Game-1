@@ -15,6 +15,16 @@ public class Vechicle : Health
     public bool IsInCar;
     protected bool IsColWithPlayer;
     public GameObject PlayerPoint;
+    public AudioClip Engine;
+    public AudioClip Explosion;
+    protected AudioSource _audio;
+
+
+
+    private void Start()
+    {
+        _audio = GetComponent<AudioSource>();
+    }
     private void Awake()
     {
         player = GameObject.FindWithTag("Player");
@@ -47,6 +57,7 @@ public class Vechicle : Health
         broken.SetActive(true);
         broken.transform.position = obj.transform.position;
         broken.transform.rotation = obj.transform.rotation;
+        AudioSource.PlayClipAtPoint(Explosion, transform.position);
         if (IsInCar)
         {
             player.GetComponent<Player>().TakeDamage(99);

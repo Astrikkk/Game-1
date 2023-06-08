@@ -39,14 +39,19 @@ public class Tank : Vechicle
     public bool TurretActive = false;
 
     public GameObject ShootExplosion;
+    public AudioClip shoot;
+
+
     private void Start()
     {
         mainCamera = Camera.main;
+        _audio = GetComponent<AudioSource>();
     }
     void Update()
     {
         if (IsInCar == true)
         {
+            _audio.volume = 10;
             moveInput = Input.GetAxis("Vertical");
             rotateInput = Input.GetAxis("Horizontal");
             if (Input.GetMouseButton(0))
@@ -57,6 +62,10 @@ public class Tank : Vechicle
             {
                 TurretActive = !TurretActive;
             }
+        }
+        else
+        {
+            _audio.volume = 1;
         }
         if (Input.GetKeyDown(KeyCode.F) && IsInCar == true)
         {
@@ -82,6 +91,7 @@ public class Tank : Vechicle
         {
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             GameObject shootExplosion = Instantiate(ShootExplosion, firePoint.position, firePoint.rotation);
+            _audio.PlayOneShot(shoot);
         }
 
         currentAmmo--;

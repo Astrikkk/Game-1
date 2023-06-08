@@ -62,6 +62,7 @@ public class TeammateTank : Vechicle
     private float _targetRotation;
 
     public GameObject ShootExplosion;
+    public AudioClip shoot;
     void FixedUpdate()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -182,6 +183,7 @@ public class TeammateTank : Vechicle
         {
             GameObject shootExplosion = Instantiate(ShootExplosion, firePoint.position, firePoint.rotation);
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            _audio.PlayOneShot(shoot);
         }
 
         currentAmmo--;

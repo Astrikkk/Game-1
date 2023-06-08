@@ -22,10 +22,13 @@ public class Pistol : MonoBehaviour
     private int currentAmmo;
     private bool isReloading = false;
     public bool CanBePickedUp = true;
+    private AudioSource _audio;
+    public AudioClip shoot;
 
     private void Start()
     {
         currentAmmo = maxAmmo;
+        _audio = GetComponent<AudioSource>();
     }
 
 
@@ -49,11 +52,11 @@ public class Pistol : MonoBehaviour
             float angle = Random.Range(-1f, 1f) * (1 - accuracy) * 90f;
 
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-
+            _audio.PlayOneShot(shoot);
             bullet.transform.Rotate(0, 0, angle + 90);
             bullet.GetComponent<Bullet>().damage = this.damage;
         }
-
+        
         currentAmmo--;
     }
     public void IvokePickUp()

@@ -21,6 +21,7 @@ public class Teammate : Health
     private bool isMoving = false;
     private float moveTimer = 0f;
 
+    private Animator animator; // Додано об'єкт аніматора
 
     public float fireRate = 0.1f;
     public int bulletsPerShot = 1;
@@ -45,6 +46,7 @@ public class Teammate : Health
     private void Start()
     {
         isMoving = true;
+        animator = GetComponent<Animator>(); // Отримання компонента Animator
     }
 
     private void FixedUpdate()
@@ -73,7 +75,16 @@ public class Teammate : Health
 
             }
         }
+
+        UpdateAnimation(); // Оновлення стану анімації
     }
+
+    private void UpdateAnimation()
+    {
+        bool isMoving = IsPatroling || IsMovingToPlayer; // Визначає, чи тімейт рухається
+        animator.SetBool("IsMoving", isMoving); // Встановлює значення параметра анімації "IsMoving"
+    }
+
     private void MoveToPlayer()
     {
         float distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
@@ -81,10 +92,13 @@ public class Teammate : Health
         if (distanceToPlayer > stoppingDistance)
         {
             targetPosition = player.transform.position;
+            isMoving = false;
         }
+        else isMoving = false;
 
         transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
     }
+
     public void RotateToObject()
     {
         GameObject nearestPlayer = CheckNearestObjec("Enemy");
@@ -94,13 +108,13 @@ public class Teammate : Health
         Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
     }
+
     GameObject CheckNearestObjec(string Tag)
     {
         GameObject check = GameObject.FindGameObjectWithTag(Tag);
         if (check == null) return null;
         GameObject[] players = GameObject.FindGameObjectsWithTag(Tag);
         List<float> distances = new List<float>();
-
 
         foreach (GameObject player in players)
         {
@@ -118,7 +132,6 @@ public class Teammate : Health
     {
         if (isMoving)
         {
-
             // переміщення в рандомному напрямку
             transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
 
@@ -149,6 +162,7 @@ public class Teammate : Health
             }
         }
     }
+
     private void Patrol()
     {
         if (patrolPoints.Count == 0) return;
@@ -178,6 +192,7 @@ public class Teammate : Health
             }
         }
     }
+
     public void Shoot()
     {
         if (isReloading) return;
@@ -207,6 +222,7 @@ public class Teammate : Health
 
         currentAmmo--;
     }
+
     private IEnumerator Stun()
     {
         isStunned = true;
@@ -221,6 +237,7 @@ public class Teammate : Health
         //    StartCoroutine(Stun());
         //}
     }
+
     private IEnumerator Reload()
     {
         isReloading = true;
