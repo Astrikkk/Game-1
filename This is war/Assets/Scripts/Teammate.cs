@@ -43,6 +43,10 @@ public class Teammate : Health
 
     private Vector2 targetPosition;
 
+    public AudioSource _audio;
+    public AudioClip shoot;
+    public AudioClip Walk;
+
     private void Start()
     {
         isMoving = true;
@@ -72,10 +76,16 @@ public class Teammate : Health
                     if (IsMovingToPlayer && player != null) MoveToPlayer();
                     else Move();
                 }
-
+            }
+            if (isMoving)
+            {
+                _audio.Play();
+            }
+            else
+            {
+                _audio.Stop();
             }
         }
-
         UpdateAnimation(); // Оновлення стану анімації
     }
 
@@ -218,6 +228,7 @@ public class Teammate : Health
 
             Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
             bulletRb.AddForce(firePoint.up * bulletSpeed, ForceMode2D.Impulse);
+            _audio.PlayOneShot(shoot);
         }
 
         currentAmmo--;

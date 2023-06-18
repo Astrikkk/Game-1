@@ -36,6 +36,10 @@ public class Enemy : Health
     private int randomDirection;
     public float rotationSpeed = 5f;
 
+
+    public AudioSource _audio;
+    public AudioClip shoot;
+    public AudioClip Walk;
     private void Start()
     {
         isMoving = true;
@@ -60,6 +64,15 @@ public class Enemy : Health
                     else Move();
                 }
 
+            }
+
+            if (isMoving)
+            {
+                _audio.Play();
+            }
+            else
+            {
+                _audio.Stop();
             }
         }
     }
@@ -192,6 +205,7 @@ public class Enemy : Health
 
             Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
             bulletRb.AddForce(firePoint.up * bulletSpeed, ForceMode2D.Impulse);
+            _audio.PlayOneShot(shoot);
         }
 
         currentAmmo--;

@@ -55,6 +55,9 @@ public class EnemyTank : Health
     private Quaternion targetRotation;
 
     public GameObject ShootExplosion;
+
+    public AudioSource _audio;
+    public AudioClip shoot;
     void Update()
     {
     }
@@ -158,6 +161,7 @@ public class EnemyTank : Health
         {
             GameObject shootExplosion = Instantiate(ShootExplosion, firePoint.position, firePoint.rotation);
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            _audio.PlayOneShot(shoot);
         }
 
         currentAmmo--;

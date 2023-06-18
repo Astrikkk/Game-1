@@ -19,6 +19,7 @@ public class BTR : Vechicle
     private int currentAmmo;
     private bool isReloading = false;
     public float rotationSpeed = 6f;
+    public AudioClip shoot;
     private void Start()
     {
         mainCamera = Camera.main;
@@ -57,6 +58,7 @@ public class BTR : Vechicle
         fireTimer = Time.time;
         {
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            _audio.PlayOneShot(shoot);
         }
 
         currentAmmo--;
