@@ -3,7 +3,7 @@ using UnityEngine;
 public class Player : Health
 {
     public float moveSpeed = 5.0f;
-    private Camera mainCamera;
+    public Camera mainCamera;
     public GameObject HoldPoint;
     public GameObject ThrowPoint;
     private GameObject gun;
@@ -135,6 +135,11 @@ public class Player : Health
         if (HP <= 50)
         {
             mainCamera.GetComponent<CameraController>().PostProcessing.enabled = true;
+        }
+        else
+        {
+
+            mainCamera.GetComponent<CameraController>().PostProcessing.enabled = false;
         }
         base.TakeDamage(damage);
     }

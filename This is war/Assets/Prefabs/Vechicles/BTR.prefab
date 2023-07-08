@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b476667485bc41149839a73ad66bd92f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 3000
+  HP: 800
   moveSpeed: 7
   rotateSpeed: 100
   broken: {fileID: 1994154880446148220}

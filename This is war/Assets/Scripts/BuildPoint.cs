@@ -15,10 +15,6 @@ public class BuildPoint : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            OpenMenu();
-        }
 
         if (currentObject != null)
         {

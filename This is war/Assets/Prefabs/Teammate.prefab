@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 100
-  distanceToReact: 10
+  distanceToReact: 20
   patrolPoints:
   - {fileID: 6925133054344517609}
   - {fileID: 5149510691562891732}
