@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b476667485bc41149839a73ad66bd92f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 800
+  HP: 1900
   moveSpeed: 7
   rotateSpeed: 100
   broken: {fileID: 1994154880446148220}
@@ -241,6 +241,7 @@ MonoBehaviour:
   PlayerPoint: {fileID: 1994154879741130773}
   Engine: {fileID: 8300000, guid: f9874b547a6ecf24fa90228410c04023, type: 3}
   Explosion: {fileID: 8300000, guid: 7b9486d088f7a55429afd7f9036d23bf, type: 3}
+  _audio: {fileID: 908180610851230330}
   mainCamera: {fileID: 0}
   Tower: {fileID: 1994154880755073533}
   fireRate: 0.1
@@ -252,7 +253,7 @@ MonoBehaviour:
   maxAmmo: 100
   reloadTime: 5
   rotationSpeed: 6
-  shoot: {fileID: 8300000, guid: dc64988e6425e3b4d8044fcc6a8d799a, type: 3}
+  shot: {fileID: 8300000, guid: 25c43c5401204af438cb437f590dd024, type: 3}
 --- !u!61 &1994154879831727786
 BoxCollider2D:
   m_ObjectHideFlags: 0

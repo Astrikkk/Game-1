@@ -5155,7 +5155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 790b2ac2e4311104b9e7edd0cffe30c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 500
+  HP: 1100
   moveSpeed: 10
   rotateSpeed: 100
   broken: {fileID: 3870872790629722631}
@@ -5165,6 +5165,7 @@ MonoBehaviour:
   PlayerPoint: {fileID: 3870872789290325678}
   Engine: {fileID: 8300000, guid: 74ddce558292b0c4aabf07b114f799c4, type: 3}
   Explosion: {fileID: 8300000, guid: 2ae77b39600deb543b15830d6de8e2b5, type: 3}
+  _audio: {fileID: 0}
 --- !u!61 &3870872790692793146
 BoxCollider2D:
   m_ObjectHideFlags: 0

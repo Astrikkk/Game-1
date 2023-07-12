@@ -5418,7 +5418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 168e9bfbcaa9aff4e932a2d4100d2462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 4000
+  HP: 5000
   moveSpeed: 10
   rotateSpeed: 100
   broken: {fileID: 6652289257827087433}
@@ -5428,6 +5428,7 @@ MonoBehaviour:
   PlayerPoint: {fileID: 6652289258262389280}
   Engine: {fileID: 0}
   Explosion: {fileID: 0}
+  _audio: {fileID: 0}
   Tower: {fileID: 6652289257516833736}
   Enemy: {fileID: 0}
   Turret: {fileID: 1349750901686533350}

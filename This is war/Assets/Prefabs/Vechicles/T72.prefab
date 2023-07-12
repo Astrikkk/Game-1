@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 444d444add8ba574e8cdf50e088ea329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 1200
+  HP: 5000
   moveSpeed: 7
   rotateSpeed: 100
   broken: {fileID: 8269383613772844007}
@@ -291,6 +291,7 @@ MonoBehaviour:
   PlayerPoint: {fileID: 8269383612060900750}
   Engine: {fileID: 8300000, guid: f9874b547a6ecf24fa90228410c04023, type: 3}
   Explosion: {fileID: 8300000, guid: 7b9486d088f7a55429afd7f9036d23bf, type: 3}
+  _audio: {fileID: 0}
   mainCamera: {fileID: 0}
   Tower: {fileID: 8269383613477545062}
   Turret: {fileID: 4334760872237466440}

@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbef50cb107485b489fd4d4198656be1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 1200
+  HP: 4900
   moveSpeed: 5
   Tower: {fileID: 3483705050921077477}
   Turret: {fileID: 9129484566646189515}
