@@ -41,15 +41,6 @@ public class Player : Health
             gun.GetComponent<SpriteRenderer>().sprite = gun.GetComponent<Pistol>().skin[1];
 
         }
-
-        if (other.gameObject.CompareTag("Ammo"))
-        {
-            if (gun == null) return;
-            gun.GetComponent<Pistol>().allAmmo += 20;
-            GameObject ammo;
-            ammo = other.gameObject;
-            Destroy(ammo);
-        }
     }
     void Shoot()
     {
